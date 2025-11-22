@@ -1,0 +1,26 @@
+.app-container { padding: 20px; font-family: sans-serif; max-width: 1200px; margin: 0 auto; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.header-actions { display: flex; gap: 10px; }
+.controls { display: flex; gap: 10px; margin-bottom: 20px; }
+.main-layout { display: flex; gap: 20px; position: relative; }
+.table-section { flex: 1; }
+
+/* Table Styles */
+.product-table { width: 100%; border-collapse: collapse; border: 1px solid #ddd; }
+.product-table th, .product-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+.product-table tr:hover { background-color: #f9f9f9; cursor: pointer; }
+
+/* Status Badges */
+.status-badge { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.instock { background-color: #d4edda; color: #155724; }
+.outstock { background-color: #f8d7da; color: #721c24; }
+
+/* Sidebar */
+.history-sidebar { 
+    width: 300px; background: #fff; border-left: 1px solid #ddd; 
+    padding: 20px; position: fixed; right: 0; top: 0; height: 100vh; 
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); z-index: 1000;
+}
+.sidebar-header { display: flex; justify-content: space-between; margin-bottom: 20px; }
+.icon-btn { border: none; background: none; cursor: pointer; padding: 4px; }
+.icon-btn.delete { color: red; }
